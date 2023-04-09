@@ -2,9 +2,28 @@ package controller;
 
 public class ControllerChef 
 {
-	public ControllerChef()
+	private int id;
+	public ControllerChef(int id)
 	{
-		//Estou em outro estado, não vou conseguir fazer agora :x
+		this.id = id;
+	}
+	
+	public void cozinha()
+	{
+		new Thread()
+		{
+			public void run()
+			{
+				cozimento();
+			}
+		}.start();
 	}
 
+	public void cozimento()
+	{
+		
+		
+		
+		
+	}
 }
