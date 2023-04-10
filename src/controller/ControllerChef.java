@@ -8,6 +8,7 @@ public class ControllerChef extends Thread
 	private int id;
 	private Semaphore entrega;
 	private DecimalFormat formatacao = new DecimalFormat("0.00");
+	
 	public ControllerChef(int id, Semaphore fila)
 	{
 		this.id = id;
